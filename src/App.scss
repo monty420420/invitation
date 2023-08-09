@@ -1,5 +1,32 @@
 .App {
   text-align: center;
+  font-size: 6.25%; //1rem=1px
+  width: 750em;
+  height: 4000em;
+  display: block;
+  margin: 0 auto;
+  font-family: FinSerif;
+
 }
+/* 모바일 화면에 대한 스타일 */
+@media (max-width: 767px) {
+  .App {
+    width: 380em;
+  }
+}
+
+/* 태블릿 화면에 대한 스타일 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .App {
+    width: 600em;
+  }
+}
+
+/* 데스크톱 화면에 대한 스타일 */
+@media (min-width: 1024px) {
+  .App{
+  }
+}
+
 
 
