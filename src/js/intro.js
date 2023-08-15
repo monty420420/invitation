@@ -5,7 +5,7 @@ function Intro() {
     return (
         <div id="intro" className="intro">
             <div className='intro_background'></div>
-            <div className='intro_text'></div>
+            <div className='intro_text'>WELCOME TO OUR WEDDING</div>
         </div>
     )
 }
