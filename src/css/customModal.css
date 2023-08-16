@@ -11,6 +11,23 @@
   align-items: center;
   overflow: none;
   z-index: 1000;
+  color: white;
+  display: block;
+  padding-top: 120px;
+  margin: 0 auto;
+  font-size: 50px;
+}
+.modal_lists {
+  list-style-type: none;
+  padding: 0;
+}
+.modal_lists_list {
+  padding: 10px;
+  cursor: pointer;
+}
+.modal_lists_list:hover {
+  color: black;
+  background-color: rgb(200, 239, 255);
 }
 
 .close-button {

@@ -10,6 +10,42 @@ function Hamburger() {
     setIsClicked(!isClicked);
     setModalIsOpen(!modalIsOpen);
   };
+  const closeModal = () => {
+    setIsClicked(false);
+    setModalIsOpen(false);
+  };
+
+  const scrollintro = () => {
+    closeModal(); // 모달 닫기
+    const introMove = document.getElementById('intro');
+    if (introMove) {
+      introMove.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
+
+  const scrollToExplanation = () => {
+    closeModal(); // 모달 닫기
+    const explanationMove = document.getElementById('explanation'); 
+    if (explanationMove) {
+      explanationMove.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    }
+  };
+  const scrollHost= () => {
+    closeModal(); // 모달 닫기
+    const hostMove = document.getElementById('host');
+    if (hostMove) {
+      hostMove.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
 
   return (
     <div className='toggle'>
@@ -18,7 +54,7 @@ function Hamburger() {
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
-      <CustomModal isOpen={modalIsOpen} closeModal={() => setModalIsOpen(false)} />
+      <CustomModal isOpen={modalIsOpen} closeModal={closeModal} scrollintro={scrollintro} scrollToExplanation={scrollToExplanation} scrollHost={scrollHost}/>
     </div>
   );
 }

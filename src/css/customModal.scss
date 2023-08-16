@@ -11,6 +11,25 @@
     align-items: center;
     overflow: none;
     z-index: 1000;
+    color: white;
+    display: block;
+    padding-top: 120px;
+    margin: 0 auto;
+    font-size: 50px;
+    &_lists{
+          // width: 620px;
+          // margin: 0 auto;
+          list-style-type: none;
+          padding: 0;
+      &_list{
+        padding: 10px;
+        cursor: pointer;
+        &:hover{
+          color: black;
+          background-color: rgb(200, 239, 255);
+        }
+      }
+    }
   }
 
   .close-button {
