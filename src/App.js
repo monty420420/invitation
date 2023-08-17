@@ -5,6 +5,7 @@ import "./font/font.css";
 import Hamburger from './js/hamburger.js';
 import Explanation from './js/explanation.js';
 import Host from './js/host.js';
+import CountDown from './js/countDown.js';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
       <Intro/>
       <Explanation/>
       <Host/>
+      <CountDown/>
     </div>
   );
 }

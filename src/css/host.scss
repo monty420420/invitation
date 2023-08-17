@@ -1,0 +1,47 @@
+.host{
+    width: 100%;
+    height: 1400px;
+    overflow: hidden;
+    background-color: white;
+    &_content{
+        margin: 40px auto;
+        width: 90%;
+        height: 90%;
+        border: solid 4px gray;
+        font-size: 22px;
+        display: block;
+        &_groomImg{
+            border: solid 2px lightgray;
+            width: 60%;
+            height: 30%;
+            background-position: center center;
+            background-size:cover;
+            background-image: url(../img/groom.jpg); 
+            box-shadow: 7px 7px 7px 7px rgb(180, 180, 180);
+        }
+        &_brideImg{
+            border: solid 2px lightgray;
+            width: 60%;
+            height: 30%;
+            background-position: center center;
+            background-size:cover;
+            background-image: url(../img/bride.jpg); 
+            box-shadow: 7px 7px 7px 7px rgb(180, 180, 180);
+        }
+    }
+
+}
+/* 모바일 화면에 대한 스타일 */
+@media (max-width: 767px) {
+
+  }
+  
+  /* 태블릿 화면에 대한 스타일 */
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+  }
+  
+  /* 데스크톱 화면에 대한 스타일 */
+  @media (min-width: 1024px) {
+
+  }
