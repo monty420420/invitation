@@ -5,7 +5,7 @@ function CountDown(){
 
 
     return(
-     <div className='countDown'>
+     <div id='countDown' className='countDown'>
         <div className='countDown_title'>CountDown</div>
         <div className='countDown_date'>2023. 09. 17</div>
         <div className='countDown_time'>

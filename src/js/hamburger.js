@@ -46,6 +46,26 @@ function Hamburger() {
       });
     }
   }
+  const scrolCountDown= () => {
+    closeModal(); // 모달 닫기
+    const countMove = document.getElementById('countDown');
+    if (countMove) {
+      countMove.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
+  const scrolInformation= () => {
+    closeModal(); // 모달 닫기
+    const infoMove = document.getElementById('information');
+    if (infoMove) {
+      infoMove.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
 
   return (
     <div className='toggle'>
@@ -54,7 +74,7 @@ function Hamburger() {
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
-      <CustomModal isOpen={modalIsOpen} closeModal={closeModal} scrollintro={scrollintro} scrollToExplanation={scrollToExplanation} scrollHost={scrollHost}/>
+      <CustomModal isOpen={modalIsOpen} closeModal={closeModal} scrollintro={scrollintro} scrollToExplanation={scrollToExplanation} scrollHost={scrollHost} scrolCountDown={scrolCountDown} scrolInformation={scrolInformation}/>
     </div>
   );
 }
